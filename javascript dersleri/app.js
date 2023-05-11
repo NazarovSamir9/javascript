@@ -486,7 +486,7 @@ for(let i=0;i<=array.lenght-1;i++){
 console.log("Massivdeki ededlerin hasili:"+ hasil);
 */
 
-let array = [1,2,4,6,12,"Samir",34,76,"Nazarov"]
+/*let array = [1,2,4,6,12,"Samir",34,76,"Nazarov"]
 
 for(let i=0; i<=array.lenght-1; i++){
   if(array[i]!=typeof 12){
@@ -494,5 +494,17 @@ for(let i=0; i<=array.lenght-1; i++){
 
   }
   console.log(array);
+}
+*/
+
+
+
+//!--------------verilmis ededin tam eded olub olmadigini yoxla----------------
+let eded = Number(prompt("Eded daxil edin"));
+if((eded*10)%10==0){
+  alert("Daxil etdiyiniz eded tam ededdir...")
+}
+else{
+  alert("Daxil etdiyiniz tam eded deyil...")
 }
 
