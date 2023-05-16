@@ -436,20 +436,6 @@ else{
 }
 */
 
-/*
-let komputer1{
-  ad:ACER,
-  model:Nitro 5,
-  kateqoriya:komputer,
-  qiymeti:1300
-}
-let komputer2{
-  ad:ACER,
-  model:Gaming,
-  kateqoriya:komputer,
-  qiymeti:1500
-}
-*/
 
 
 /*
@@ -509,7 +495,7 @@ else{
 }
 */
 
-
+/*
 //!-----------cumledeki boslugu silin--------------
 let cumle = Array(prompt("Cumle daxil edin:"));
 
@@ -519,4 +505,53 @@ for(let i=0;i<=cumle.length-1;i++){
   }
 }
 console.log(cumle)
+*/
 
+
+
+let komputer1{
+  ad:ACER,
+  model:Nitro 5,
+  kateqoriya:komputer,
+  qiymeti:1300
+}
+let komputer2{
+  ad:ACER,
+  model:Gaming,
+  kateqoriya:komputer,
+  qiymeti:1500
+}
+let komputer3{
+  ad:ACER,
+  model:Nitro 4,
+  kateqoriya:komputer,
+  qiymeti:1350
+}
+let komputer4{
+  ad:Lenova,
+  model:asds,
+  kateqoriya:komputer,
+  qiymeti:800
+}
+let komputer5{
+  ad:hp,
+  model:asdfg ,
+  kateqoriya:komputer,
+  qiymeti:1000
+}
+
+let istifadeciModeladi = prompt("Model adi daxil edin:")
+let modeller = [komputer1,komputer2,komputer3,komputer4,komputer5]
+let secilmis = []
+
+
+modeller.forEach(function(komputer){
+ if(komputer.ad.toUpperCase().includes(istifadeciModeladi.toUpperCase(),0)){
+  secilmis.push(komputer);
+ }
+});
+
+secilmis.forEach(function(adi){
+   console.log("|" + "Ad" + "|" + "Model" + "|" + "kateqoriya" + "|" + "Qiymet" + "|")
+   console.log("|" + komputer.ad + "|" + komputer.model + "|" + komputer.kateqoriya + "|" + komputer.qiymeti + "|") 
+});
