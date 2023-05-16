@@ -498,8 +498,8 @@ for(let i=0; i<=array.lenght-1; i++){
 */
 
 
-
-//!--------------verilmis ededin tam eded olub olmadigini yoxla----------------
+/*
+!--------------verilmis ededin tam eded olub olmadigini yoxla----------------
 let eded = Number(prompt("Eded daxil edin"));
 if((eded*10)%10==0){
   alert("Daxil etdiyiniz eded tam ededdir...")
@@ -507,4 +507,16 @@ if((eded*10)%10==0){
 else{
   alert("Daxil etdiyiniz tam eded deyil...")
 }
+*/
+
+
+//!-----------cumledeki boslugu silin--------------
+let cumle = Array(prompt("Cumle daxil edin:"));
+
+for(let i=0;i<=cumle.length-1;i++){
+  if(cumle[i]==" "){
+    cumle.splice(i-1,1).join("");
+  }
+}
+console.log(cumle)
 
