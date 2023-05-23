@@ -809,3 +809,110 @@ let cumle = prompt("Bir cumle yazin:")
 let sozSayi = cumle.split(" ").length;
 document.write("Cumlede " + sozSayi + " dene soz var.");
 */
+
+
+/*
+!---------------Task18--------------------
+
+
+let cumle = prompt("Bir cumle daxil edin:");
+let yeniCumle = cumle.replace(/\s/g, ''); // replace metodu ile bosluqlari silirik
+document.write(yeniCumle); 
+*/
+
+
+/*
+!----------------Task19-------------------
+
+let cumle = prompt("Bir cumle daxil edin:");
+let birinciHerf = cumle.charAt(0).toUpperCase();
+document.write(birinciHerf + cumle.slice(1)); //slice(1)->cumlenin birinci herfini silmek ucundur.
+
+*/
+
+
+
+/*
+!-----------------Task20---------------------
+
+
+let massiv1 = [];
+let massiv2 = [];
+
+let massiv1Uzunluq = prompt("a-massivinin uzunlugunu daxil edin:");
+let massiv2Uzunluq = prompt("b-massivinin uzunlugunu daxil edin:");
+
+
+for(let i=0;i<=massiv1Uzunluq-1;i++){
+  massiv1[i] = prompt("1-ci massivde " + i + "-ci yerde duran ededi daxil edin:")
+}
+
+for(let i=0;i<=massiv2Uzunluq-1;i++){
+  massiv2[i] = prompt("2-ci massivde " + i + "-ci yerde duran ededi daxil edin:")
+}
+
+if(massiv1Uzunluq == massiv2Uzunluq){
+    for(let i=0 ; i<=massiv1Uzunluq ; i++){
+        if(massiv1[i] === massiv2[i]){
+            document.write("Daxil etdiyiniz massivler bir-birine beraberdir...")
+            break;
+        }
+    }
+}
+else{
+    document.write("Daxil etdiyiniz massivler biri-birine beraber deyil...")
+}
+
+*/
+
+
+
+/*
+!---------------Task21--------------
+
+let massiv = [];
+
+let massivUzunluq = prompt("massivin uzunlugunu daxil edin:");
+
+for(let i=0;i<=massivUzunluq-1;i++){
+  massiv[i] = prompt("massivde " + i + "-ci yerde duran ededi daxil edin:")
+}
+
+
+for (let i = 0; i < massivUzunluq - 1; i++) {
+  for (let j = i + 1; j < massivUzunluq; j++) {
+    if (massiv[j] < massiv[i]) {
+      let temp = massiv[i];
+      massiv[i] = massiv[j];
+      massiv[j] = temp;
+    }
+  }
+}
+
+document.write(massiv); 
+
+*/
+
+
+/*
+!------------Task28----------------------
+
+
+
+let saatliqPul = prompt("Saatliq emek haqqini daxil edin:");
+let saat = prompt("Gunluk is saatlarini daxil edin:");
+let gun = prompt("Heftelik is gunun daxil edin");
+let heftelikMaas = 0;
+let maas = 0;
+
+let heftelikSaat = gun*saat;
+
+if(heftelikSaat>40){
+    heftelikMaas = 40*saatliqPul + (((heftelikSaat%40)*saatliqPul)*2)
+}
+
+maas = heftelikMaas*4;
+
+document.write("Ayliq emek haqqi:" + maas);
+
+*/
